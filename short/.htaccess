@@ -1,0 +1,11 @@
+RewriteEngine On
+
+
+RewriteCond %{HTTPS} !=on
+
+RewriteRule ^(.*) https://%{SERVER_NAME}/$1 [R,L]
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http://(www\.)?example\.com/ [NC]
+RewriteRule \.(gif|jpg|png)$ - [F]
+RewriteRule ^/?([a-z]+)$ $1.html [L]
+DirectoryIndex a.html

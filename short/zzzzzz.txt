@@ -1,0 +1,5 @@
+WJLNB.COM 短网址人工记录
+1.https://www.wjlnb.com = a.html
+2.https://www.wjl.nx.cn = b.html
+3.https://www.baidu.com = c.html
+4.https://bbs.wjlnb.com = d.html

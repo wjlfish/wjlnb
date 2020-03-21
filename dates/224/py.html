@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="icon" href="/img/favicon.ico" sizes="32x32">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style type="text/css">
+#playercontainer {
+	position: absolute;left:15%;top:100px;
+}
+</style>
+<title>课程页面</title>
+</head>
+
+<body>
+<div id="playercontainer"></div>
+<script type="text/javascript" src="https://study.wjlnb.com/player/cyberplayer.js"></script>
+<script type="text/javascript">
+    var player = cyberplayer("playercontainer").setup({
+        width: 960, // 宽度，也可以支持百分比(不过父元素宽度要有)
+        height: 540, // 高度，也可以支持百分比
+        title: "课程视频", // 标题
+        file: "https://hhwjl.oss-cn-huhehaote.aliyuncs.com/vi/py/224.mp4", // 播放地址
+        autostart: false, // 是否自动播放
+        stretching: "uniform", // 拉伸设置
+        repeat: false, // 是否重复播放
+        volume: 100, // 音量
+        controls: true, // controlbar是否显示
+        starttime: 0, // 视频开始播放时间点(单位s)，如果不设置，则可以从上次播放时间点续播
+        logo: { // logo设置
+            linktarget: "_blank",
+            margin: 8,
+            hide: false,
+            position: "top-center", // 位置
+            file: "./img/logo.png" // 图片地址
+        },
+        ak: "39e57d7222c2420d852192efc05d89b0"
+    });
+</script>
+<p align="center"><a href="https://study.wjlnb.com">访问主页</a></p>
+</body>
+</html>

@@ -1,0 +1,12 @@
+RewriteEngine On
+
+RewriteCond %{HTTPS} !=on
+
+RewriteRule ^(.*) https://%{SERVER_NAME}/$1 [R,L]
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http://(www\.)?example\.com/ [NC]
+RewriteRule \.(gif|jpg|png)$ - [F]
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^/?([a-zA-Z0-9]+)$ $1.php [L]
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^/?([a-zA-Z0-9]+)$ $1.html [L]
