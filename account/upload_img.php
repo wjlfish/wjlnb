@@ -17,9 +17,9 @@
     require('cosv4/include.php');
     use Qcloud\Cos\Api;
     $config = array(
-        'app_id' => '1258252864',
-        'secret_id' => 'AKIDJRYYXNV3CE84rToNfQ4XqzxxIdHnqQek',
-        'secret_key' => '5Vu9HC4kEXi7VmvseP3av7KOHMPo4DDp',
+        'app_id' => 'emmmmmm',
+        'secret_id' => 'emmmmmm',
+        'secret_key' => 'emmmmmm',
         'region' => 'cd',
         'timeout' => 60
     );
