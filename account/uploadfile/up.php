@@ -1,20 +1,20 @@
 <?php
 require 'sdk/vendor/autoload.php';
-$secretId = "AKIDDFshHfW2uiP9rPA5EPN6nbDZpsdBGWfc"; //"‘∆ API √‹‘ø SecretId";
-$secretKey = "ub3TefwHPIwKn22YAPTKzkGoqJalrtEW"; //"‘∆ API √‹‘ø SecretKey";
-$region = "ap-chengdu"; //…Ë÷√“ª∏ˆƒ¨»œµƒ¥Ê¥¢Õ∞µÿ”Ú
+$secretId = "emmmmmm"; //"‰∫ë API ÂØÜÈí• SecretId";
+$secretKey = "emmmmmm"; //"‰∫ë API ÂØÜÈí• SecretKey";
+$region = "ap-chengdu"; //ËÆæÁΩÆ‰∏Ä‰∏™ÈªòËÆ§ÁöÑÂ≠òÂÇ®Ê°∂Âú∞Âüü
 $cosClient = new Qcloud\Cos\Client(
     array(
         'region' => $region,
-        'schema' => 'https', //–≠“ÈÕ∑≤ø£¨ƒ¨»œŒ™http
+        'schema' => 'https', //ÂçèËÆÆÂ§¥ÈÉ®ÔºåÈªòËÆ§‰∏∫http
         'credentials'=> array(
             'secretId'  => $secretId ,
             'secretKey' => $secretKey)));
 try {
-    //«Î«Û≥…π¶
+    //ËØ∑Ê±ÇÊàêÂäü
     $result = $cosClient->listBuckets();
     print_r($result);
 } catch (\Exception $e) {
-    //«Î«Û ß∞‹
+    //ËØ∑Ê±ÇÂ§±Ë¥•
     echo($e);
 }
