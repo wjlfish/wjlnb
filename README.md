@@ -1,4 +1,4 @@
-<p><a href="https://www.wjlnb.com">wjlnb.com</a></p>
+<p><a href="https://www.wjlnb.com" target="_blank">wjlnb.com</a></p>
 <br>第一版程序代码
 
 <br>version1.0
