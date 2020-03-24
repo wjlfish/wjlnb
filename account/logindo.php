@@ -1,12 +1,15 @@
 <?php
 header("Content-Type: text/html; charset=utf8");
-session_name('wjlnb_id');
+ini_set("session.cookie_domain",'.wjlnb.com');
+ini_set("session.cookie_domain",'.wjl.nx.cn');
+ini_set("session.cookie_domain",'.050309.cn');
+session_name('sso_wjlnb_id');
 session_start();
 //注销登录
 if($_GET['action'] == "logout"){
     unset($_SESSION['userid']);
     unset($_SESSION['username']);
-    echo '<script language="JavaScript">;alert("注销成功");location.href="https://www.wjlnb.com";</script>;';
+    echo '<script language="JavaScript">;alert("注销成功");location.href="/";</script>;';
     exit;
 }
 
@@ -25,9 +28,9 @@ if($result = mysql_fetch_array($check_query)){
     //登录成功
     $_SESSION['username'] = $username;
     $_SESSION['userid'] = $result['id'];
-    /*echo '<script language="JavaScript">;alert("登录成功");location.href="https://www.wjlnb.com";</script>;';
+    /*echo '<script language="JavaScript">;alert("登录成功");location.href="/";</script>;';
     echo '<script>alert("登录成功！")</script>';*/
-    header("Location: https://www.wjlnb.com");
+    header("Location: /");
     exit;
 } else {
     echo '<script>alert("登录失败，请检查信息后重试！")</script>';
