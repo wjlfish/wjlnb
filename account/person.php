@@ -14,10 +14,10 @@ $options =  array(
 curl_setopt_array($ch, $options);
 $result = curl_exec($ch);
 
-session_name('wjlnb_id');
+session_name('sso_wjlnb_id');
 session_start();
 if(!isset($_SESSION['userid'])){
-	header("Location:login");
+    echo '<script language="JavaScript">;alert("请您先登录");location.href="login";</script>;';
 	exit();
 }
 
@@ -36,32 +36,31 @@ function OutputTitle(){
 <head>
 <meta property="og:title" content="空中课堂导航" />
 <meta property="og:url" content="https://www.wjlnb.com/" />
-<meta property="og:image" content="https://wjl-1258252864.cos.ap-chengdu.myqcloud.com/img/yyj.jpg" />
+<meta property="og:image" content="https://cdn.wjlnb.com/img/yyj.jpg" />
 <meta property="og:description" content="王嘉麟为唐中同学编写的空中课堂导航，可以快速找到任何你想要的学习资料" />
 <meta itemprop="name" content="空中课堂导航" />
 <meta itemprop="description" content="王嘉麟为唐中同学编写的空中课堂导航，可以快速找到任何你想要的学习资料" />
-<meta itemprop="image" content="https://wjl-1258252864.cos.ap-chengdu.myqcloud.com/img/yyj.jpg">
+<meta itemprop="image" content="https://cdn.wjlnb.com/img/yyj.jpg">
 <meta charset="utf8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
 <title>账户——空中课堂导航</title>
-<link rel="stylesheet" type="text/css" href="https://wjl-1258252864.cos.ap-chengdu.myqcloud.com/websources/css/demo.css">
-<link rel="stylesheet" type="text/css" href="https://wjl-1258252864.cos.ap-chengdu.myqcloud.com/websources/css/loading.css">
-<link rel="stylesheet" type="text/css" href="https://wjl-1258252864.cos.ap-chengdu.myqcloud.com/websources/css/maina.css">
-<link rel="stylesheet" type="text/css" href="https://wjl-1258252864.cos.ap-chengdu.myqcloud.com/websources/css/index.css">
-<link rel="stylesheet" type="text/css" href="https://wjl-1258252864.cos.ap-chengdu.myqcloud.com/websources/css/reset.css">
-<link rel="stylesheet" href="https://wjl-1258252864.cos.ap-chengdu.myqcloud.com/websources/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://wjl-1258252864.cos.ap-chengdu.myqcloud.com/websources/css/bootstrap-theme.min.css">
-<link rel="stylesheet" href="https://wjl-1258252864.cos.ap-chengdu.myqcloud.com/websources/css/fontAwesome.css">
-<link rel="stylesheet" href="https://wjl-1258252864.cos.ap-chengdu.myqcloud.com/websources/css/light-box.css">
-<link rel="stylesheet" href="https://wjl-1258252864.cos.ap-chengdu.myqcloud.com/websources/css/templatemo-style.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.wjlnb.com/websources/css/demo.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.wjlnb.com/websources/css/loading.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.wjlnb.com/websources/css/maina.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.wjlnb.com/websources/css/index.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.wjlnb.com/websources/css/reset.css">
+<link rel="stylesheet" href="https://cdn.wjlnb.com/websources/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.wjlnb.com/websources/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="https://cdn.wjlnb.com/websources/css/fontAwesome.css">
+<link rel="stylesheet" href="https://cdn.wjlnb.com/websources/css/light-box.css">
+<link rel="stylesheet" href="https://cdn.wjlnb.com/websources/css/templatemo-style.css">
 <link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-<link rel="icon" href="https://wjl-1258252864.cos.ap-chengdu.myqcloud.com/img/niu.jpg" sizes="32x32">
+<link rel="icon" href="https://cdn.wjlnb.com/img/niu.jpg" sizes="32x32">
 <script src="https://cdn.staticfile.org/jquery/1.11.1/jquery.js"></script>
-<script src="https://wjl-1258252864.cos.ap-chengdu.myqcloud.com/websources/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-<script src="https://wjl-1258252864.cos.ap-chengdu.myqcloud.com/websources/js/baidutj.js"></script>
-<script src="https://wjl-1258252864.cos.ap-chengdu.myqcloud.com/websources/js/baiduzz.js"></script>
-<script src="https://wjl-1258252864.cos.ap-chengdu.myqcloud.com/websources/js/weather.js"></script>      
-<script src="https://wjl-1258252864.cos.ap-chengdu.myqcloud.com/websources/js/nocopy.js"></script>   
+<script src="https://cdn.wjlnb.com/websources/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+<script src="https://cdn.wjlnb.com/websources/js/baidutj.js"></script>
+<script src="https://cdn.wjlnb.com/websources/js/baiduzz.js"></script>
+<script src="https://cdn.wjlnb.com/websources/js/weather.js"></script>      
 <style type="text/css">
 body,td,th {
 	font-family: Kanit, sans-serif;
@@ -75,7 +74,7 @@ body,td,th {
 
 <nav>
         <div class="logo">
-   <a href="/">导航</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo "<a href='https://www.wjlnb.com/account/'>{$_SESSION['username']}</a>"; ?>
+   <a href="/">主页</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo "<a href='https://www.wjlnb.com/account/'>{$_SESSION['username']}</a>"; ?>
  </div>
  <button type="button" style="background-color:white;color:black;" id="tp-weather-widget"> </button>
     </nav>
@@ -120,6 +119,7 @@ else
 echo '<br />';
 echo '<a href="logindo.php?action=logout">注销</a><br />';
 echo '<a href="https://www.wjlnb.com">前往主页</a><br />';
+echo '-Copyright © 2020 wjlnb.com-<br />';
 ?>
           </div>
 
@@ -135,7 +135,7 @@ echo '<a href="https://www.wjlnb.com">前往主页</a><br />';
          
 
 
-<script src="https://wjl-1258252864.cos.ap-chengdu.myqcloud.com/websources/js/app.js"></script>
+<script src="https://cdn.wjlnb.com/websources/js/app.js"></script>
 </body>
 
 </html>
@@ -144,13 +144,5 @@ echo '<a href="https://www.wjlnb.com">前往主页</a><br />';
         </div>
     </div>
                   
-    <footer>
-        <div class="container-fluid">
-            <div class="col-md-12">
-                <p>COPYRIGHT © 2020 <a href="https://www.wjlnb.com">wjlnb.com</a> <a href="admin">管理系统</a></p>
-    
-            </div>
-        </div>
-    </footer>
 
  </html>
