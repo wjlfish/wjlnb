@@ -1,5 +1,8 @@
-https://www.wjlnb.com
+WJLNB.COM
 <br>网站程序代码托管
+主站：https://www.wjlnb.com
+第一分站：https://www.wjl.nx.cn
+第二分站：https://www.050309.cn
 
 <br>version 1.0
 <br>更新内容：上传了自2020年3月22日的最新版网站程序，并且对今后的每一次大改动都做记录
