@@ -3,6 +3,9 @@ WJLNB.COM
 <br>主站：https://www.wjlnb.com
 <br>第一分站：https://www.wjl.nx.cn
 <br>第二分站：https://www.050309.cn
+<br>下载站（阿里云1）：https://dl.wjlnb.com
+<br>下载站（阿里云2）：https://dl.wjl.nx.cn
+<br>下载站（腾讯云）：https://download.wjlnb.com
 
 <br>version 1.0
 <br>更新内容：上传了自2020年3月22日的最新版网站程序，并且对今后的每一次大改动都做记录
