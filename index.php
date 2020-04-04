@@ -54,7 +54,7 @@ $result = curl_exec($ch);
 	else{
 		echo "<a href='account/login' style='letter-spacing:2px;'>登录</a> <a>|</a> <a href='account/reg' style='letter-spacing:2px;'>注册</a>";  //若session值不存在则显示登录，链接指向登录页面
 	}
-?>
+?><button style="color:white" id="tp-weather-widget"></button>
         </div>
 
     </nav>
@@ -79,18 +79,19 @@ $result = curl_exec($ch);
 	<div class="content" content-margin="5px">
 <div class="inner">
 <p>空中课堂结束了，网站好像没什么用啦~~</p>
-<p>今日天气<a style="color:white" id="tp-weather-widget"></a></p>
 <p><a href="api/show/showindeximg" target="_blank">点击查看高清网页背景图</a></p>
 <p><a href="https://dl.wjlnb.com/download/zhongkao" target="_blank">点击下载语文中考复习资料</a></p>
 <p>当前站点：<?php echo $_SERVER['HTTP_HOST']; ?></p>
 <p>主站：<a href="https://www.wjlnb.com">wjlnb.com</a></p>
 <p>第一分站：<a href="https://www.wjl.nx.cn">wjl.nx.cn</a></p>
 <p>第二分站：<a href="https://www.050309.cn">050309.cn</a></p>
-<p>自主短链接：<a href="https://w05.xyz">w05.xyz</a></p>
+<p>自主短链接：<a href="https://w05.xyz" target="_blank">w05.xyz</a></p>
+<p><a href="https://github.com/wjlfish/wjlnbgit" target="_blank">github代码托管</a></p>
 <p>-Copyright © 2020 wjlnb.com-</p>
           </div>      
+<!--实验多网站异步登录功能，失败啦，暂时废弃，我肯定还会再试的~~~
 <iframe width="0” height="0” src="https://www.wjlnb.com/account/set_cookie.php?sessionid=$sessionid&key=$key"></iframe>
-
+-->
 <script src="https://cdn.wjlnb.com/websources/js/app.js"></script>
 </body>
 
