@@ -1,4 +1,5 @@
 <?php
+ini_set("session.cookie_domain",'.wjlnb.com');
 session_name('sso_wjlnb_id');
 session_start();
 $urls = array(
@@ -37,8 +38,6 @@ $result = curl_exec($ch);
 <link rel="shortcut icon" href="https://cdn.wjlnb.com/websources/img/favicon.ico" />
 <script src="https://cdn.wjlnb.com/websources/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 <script src="https://cdn.wjlnb.com/websources/js/jquery.js"></script>
-<script src="https://cdn.wjlnb.com/websources/js/baidutj.js"></script>
-<script src="https://cdn.wjlnb.com/websources/js/baiduzz.js"></script>
 <script src="https://cdn.wjlnb.com/websources/js/weather.js"></script>  
 </head>
 
@@ -47,14 +46,14 @@ $result = curl_exec($ch);
 
 <nav>
         <div class="logo">
-   <a href="/">导航</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php 
+   <?php 
 	if(isset($_SESSION['username'])){ 		
         echo "<a href='account/'>{$_SESSION['username']}</a>";   //若session值存在则显示session值即用户名，且链接指向个人空间
 	}
 	else{
 		echo "<a href='account/login' style='letter-spacing:2px;'>登录</a> <a>|</a> <a href='account/reg' style='letter-spacing:2px;'>注册</a>";  //若session值不存在则显示登录，链接指向登录页面
 	}
-?><button style="color:white" id="tp-weather-widget"></button>
+?>&nbsp;&nbsp;&nbsp;<button style="color:white" id="tp-weather-widget"></button>
         </div>
 
     </nav>
@@ -80,12 +79,13 @@ $result = curl_exec($ch);
 <div class="inner">
 <p>空中课堂结束了，网站好像没什么用啦~~</p>
 <p><a href="api/show/showindeximg" target="_blank">点击查看高清网页背景图</a></p>
-<p><a href="https://dl.wjlnb.com/download/zhongkao" target="_blank">点击下载语文中考复习资料</a></p>
+<p><a href="https://dl.wjlnb.com/link/zhongkao" target="_blank">点击下载语文中考复习资料</a></p>
 <p>当前站点：<?php echo $_SERVER['HTTP_HOST']; ?></p>
 <p>主站：<a href="https://www.wjlnb.com">wjlnb.com</a></p>
 <p>第一分站：<a href="https://www.wjl.nx.cn">wjl.nx.cn</a></p>
 <p>第二分站：<a href="https://www.050309.cn">050309.cn</a></p>
 <p>自主短链接：<a href="https://w05.xyz" target="_blank">w05.xyz</a></p>
+<p>下载站：<a href="https://dl.wjlnb.com" target="_blank">dl.wjlnb.com</a></p>
 <p><a href="https://github.com/wjlfish/wjlnbgit" target="_blank">github代码托管</a></p>
 <p>-Copyright © 2020 wjlnb.com-</p>
           </div>      
