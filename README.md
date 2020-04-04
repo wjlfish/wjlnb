@@ -25,6 +25,6 @@ WJLNB.COM
 
 <br>version 1.3 （1.x Final)
 <br>更新内容：
-<br>1.把所有内容都更新完了，目前使用阿里云oss香港节点，并且绑定至个人域名cdn.wjlnb.com，修改网站主页为最终版样式，并至中考前都不会再更新。服务器已经续费到中考以后了，到时候再说吧。
-<br>2.新增https://dl.wjlnb.com https://dl.wjl.nx.cn https://download.wjlnb.com 三个下载站链接，使用同时使用阿里云和腾讯云服务，达到高速下载效果。
+<br>1.把所有内容都更新完了，目前使用阿里云oss香港节点，并且绑定至个人域名https://cdn.wjlnb.com ,修改网站主页为最终版样式，并至中考前都不会再更新。服务器已经续费到中考以后了，到时候再说吧。
+<br>2.新增https://dl.wjlnb.com ,https://dl.wjl.nx.cn ,https://download.wjlnb.com  三个下载站链接，使用同时使用阿里云和腾讯云服务，达到高速下载效果。
 <br>v1.3Final 2020-4-4 22:22
