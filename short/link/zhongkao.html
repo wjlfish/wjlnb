@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+<title>下载文件</title>
+<link rel="shortcut icon" href="https://cdn.wjlnb.com/websources/img/favicon.ico" />
+<script type="text/javascript">
+window.onload = function(){
+    if(isWeiXin()){
+   alert("检测到您在微信打开此链接，请将本链接复制到浏览器打开");
+    }else{
+window.location.href = 'https://cdn.wjlnb.com/download/2020/csronly/2020%E8%AF%AD%E6%96%87%E4%B8%AD%E8%80%83%E5%A4%8D%E4%B9%A0%E8%B5%84%E6%96%99.zip';
+}
+}
+function isWeiXin(){
+    var ua = window.navigator.userAgent.toLowerCase();
+    if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+        return true;
+    }else{
+        return false;
+    }
+}
+</script>
+<meta charset="UTF-8">
+</head>
+<body>
+<p align="center">即将自动开始下载，请稍后。若没有开始，请<a href="https://cdn.wjlnb.com/download/2020/csronly/2020%E8%AF%AD%E6%96%87%E4%B8%AD%E8%80%83%E5%A4%8D%E4%B9%A0%E8%B5%84%E6%96%99.zip">点击这里</a>手动下载</p>
+<p align="center">若您使用微信浏览器打开，可能会导致无法下载。请您将链接复制到浏览器再打开</p>
+<p align="center">感谢您使用wjlnb.com下载</p>
+</body>
+</html>
