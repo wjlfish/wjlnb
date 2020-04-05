@@ -6,6 +6,9 @@ WJLNB.COM
 <br>下载站（阿里云1）：https://dl.wjlnb.com
 <br>下载站（阿里云2）：https://dl.wjl.nx.cn
 <br>下载站（腾讯云）：https://download.wjlnb.com
+<br>代码托管地点：
+<br>1.https://github.com/wjlfish/wjlnbgit
+<br>2.https://gitee.com/w_j_l/wjlnbgit
 
 <br>version 1.0
 <br>更新内容：上传了自2020年3月22日的最新版网站程序，并且对今后的每一次大改动都做记录
