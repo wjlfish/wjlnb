@@ -30,8 +30,8 @@ WJLNB.COM
 <br>2.新增https://dl.wjlnb.com (阿里云) ,https://dl.wjl.nx.cn (阿里云) ,https://download.wjlnb.com (腾讯云)  三个下载站链接，使用同时使用阿里云和腾讯云服务，达到高速下载效果。
 <br>v1.3 2020-4-5 9:58
 
-<br>version 1.4 （1.x Final)
+<br>version 1.4
 <br>更新内容：
 <br>1.静态资源使用https://static.wjlnb.com 香港节点用作私人网盘，故新开设新加坡节点供静态站使用，目前已更新重要页面。
 <br>2.下载站文件管理冗杂，安装cloudreve网盘管理程序，方便存储、管理并分享文件。使用新域名https://pan.wjlnb.com 。同时，原下载站停止解析并关闭。
-<br>v1.4Final 2020-4-18 9:37
+<br>v1.4 2020-4-18 9:37
