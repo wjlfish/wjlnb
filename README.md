@@ -32,6 +32,6 @@ WJLNB.COM
 
 <br>version 1.4 （1.x Final)
 <br>更新内容：
-<br>1.静态资源使用https://statix.wjlnb.com 香港节点用作私人网盘，故新开设新加坡节点供静态站使用，目前已更新重要页面。
+<br>1.静态资源使用https://static.wjlnb.com 香港节点用作私人网盘，故新开设新加坡节点供静态站使用，目前已更新重要页面。
 <br>2.下载站文件管理冗杂，安装cloudreve网盘管理程序，方便存储、管理并分享文件。使用新域名https://pan.wjlnb.com 。同时，原下载站停止解析并关闭。
 <br>v1.4Final 2020-4-18 9:37
