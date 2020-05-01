@@ -5,7 +5,7 @@ WJLNB.COM
 <br>第二分站：https://www.050309.cn
 <br>网盘：https://pan.wjlnb.com
 <br>代码托管地点：
-<br>1.https://github.com/wjlfish/wjlnbgit
+<br>1.https://github.com/wjlfish/wjlnb
 <br>2.https://gitee.com/w_j_l/wjlnbgit
 
 <br>version 1.0
