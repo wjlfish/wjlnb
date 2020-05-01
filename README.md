@@ -1,8 +1,7 @@
 WJLNB.COM
 <br>网站程序代码托管
 <br>主站：https://www.wjlnb.com
-<br>第一分站：https://www.wjl.nx.cn
-<br>第二分站：https://www.050309.cn
+<br>分站：https://www.wjl.nx.cn
 <br>网盘：https://pan.wjlnb.com
 <br>代码托管地点：
 <br>1.https://github.com/wjlfish/wjlnb
